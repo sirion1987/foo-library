@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="application/javascript">
+      /* The module 'fooLibrary' is defined on esbuild configuration or
+         CLI option under globalName option.
+       */
+
+      let library = new fooLibrary.FooLibrary({
+        message: "Custom message.",
+        mountOn: "root"
+      })
+
+      library.render();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "name": "foo-library",
+  "version": "1.0.0",
+  "description": "A foo library",
+  "main": "index.js",
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "start": "node esbuild-development.config.mjs",
+    "watch": "node esbuild-development.config.mjs --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/chorally/foo-library-js.git"
+  },
+  "keywords": [
+    "Foo"
+  ],
+  "author": "Chorally SRL",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/chorally/foo-library-js#readme",
+  "devDependencies": {
+    "esbuild": "^0.18.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
